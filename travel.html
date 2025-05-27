@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Travels</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="travel.html" class="active">Travel</a>
+    <a href="books.html">Books</a>
+  </nav>
+  <h1>My Travel Adventures</h1>
+  <p>I love exploring new places. Here are some of my favorite trips:</p>
+  <div id="map" style="height: 400px; width: 100%; max-width: 900px; margin: 0 auto; padding: 1rem; box-sizing: border-box;"></div>
+  <h3>My Top 3:</h3>
+
+
+ <div class="city-container">
+  <div class="city-entry">
+    <img src="images/london.jpg" alt="Room full with lit candles with chairs in the background" class="city-image">
+    <div class="city-box">
+      <h4>London, Great Britain</h4>
+      <ul>
+        <li>Visited: 2025</li>
+        <li>Favorite activity: Candlelight concert</li>
+        <li>Food highlight: Fish and Chips</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="city-container">
+  <div class="city-entry">
+    <img src="images/stockholm.jpg" alt="Wall made out of ice with a text labeled Fata Morgana" class="city-image">
+    <div class="city-box">
+    <h4>Stockholm, Sweden</h4>
+    <ul>
+      <li>Visited: 2023</li>
+      <li>Favorite activity: Icebar </li>
+      <li>Food highlight: Kanelbullar</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+
+  <div class="city-container">
+  <div class="city-entry">
+    <img src="images/tokyo.jpeg" alt="Hello Kitty drones in the Tokyo night sky" class="city-image">
+    <div class="city-box">
+    <h4>Tokyo, Japan</h4>
+    <ul>
+      <li>Visited: 2025</li>
+      <li>Favorite activity: Firework and drone show</li>
+      <li>Food highlight: Ichigo Daifuku</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+
+  <script src="travel.js"></script>
+</body>
+</html>

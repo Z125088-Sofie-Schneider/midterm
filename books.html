@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books I Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="travel.html">Travel</a>
+    <a href="books.html" class="active">Books</a>
+  </nav>
+
+  <h1>My Favorite Books</h1>
+  <p>Here are some books that inspired me:</p>
+
+  <h2>My Favorite Books by Genre</h2>
+  <div class="current-book-container">
+    <button id="reveal-btn">Reveal Current Book</button>
+    <p id="current-book" class="hidden">The House of the Dead – Fyodor Dostoevsky</p>
+  </div>
+
+  <div class="genre-container">
+
+    <div class="genre-box">
+      <h3>Fantasy</h3>
+      <ul>
+        <li class="book">
+          Harry Potter
+          <div class="book-info">J.K Rowling</div>
+        </li>
+        <li class="book">
+          Shadow and Bone
+          <div class="book-info">Chelsea Lauren</div>
+        </li>
+        <li class="book">
+          Hunger Games
+          <div class="book-info">Suzanne Collins</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="genre-box">
+      <h3>Classics</h3>
+      <ul>
+        <li class="book">
+          Pride and Prejudice
+          <div class="book-info">Jane Austen</div>
+        </li>
+        <li class="book">
+          Wuthering Heights
+          <div class="book-info">Emily Bronte</div>
+        </li>
+        <li class="book">
+          Dracula
+          <div class="book-info">Bram Stoker</div>
+        </li>
+        <li class="book">
+          Crime and Punishment
+          <div class="book-info">Fyodor Dostoevsky</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="genre-box">
+      <h3>Thriller</h3>
+      <ul>
+        <li class="book">
+          The Silence of the Lambs
+          <div class="book-info">Thomas Harris</div>
+        </li>
+        <li class="book">
+          The Shining
+          <div class="book-info">Steven King</div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="books.js"></script>
+</html>
