@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // When the "Reveal" button is clicked
   button.addEventListener("click", function () {
+    // Disable the button to prevent multiple clicks
+    button.disabled = true;
     // Show the book text and hide the button
     book.classList.add("show");    
     book.classList.remove("hidden"); 
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         book.classList.add("hidden");
         button.classList.remove("hidden");
+        button.disabled = false; // Re-enable the button
       }, 500);
     }, 5000);
   });
