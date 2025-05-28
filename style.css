@@ -358,7 +358,7 @@ h2, h3 {
 
 .timeline li::before {
   content: '•';
-  color: #c8f7c5; /* Akzentgrün */
+  color: #2c3e50;
   position: absolute;
   left: 0;
   font-size: 1.2em;
