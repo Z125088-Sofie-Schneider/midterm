@@ -39,7 +39,7 @@ main {
 
 /* Navigation */
 nav {
-  background-color: rgba(220, 238, 252, 0.85); /* Pastellblau transparent */
+  background-color: #dceefcd9; /* Pastellblau transparent */
   padding: 8px 12px;
   border-radius: 4px;
   margin-bottom: 0;
@@ -141,7 +141,7 @@ h2, h3 {
 }
 
 #reveal-btn {
-  background-color: rgba(220, 238, 252, 0.85); 
+  background-color: #dceefcd9; 
   color: #2c3e50;
   padding: 8px 16px;
   border: none;
@@ -152,7 +152,7 @@ h2, h3 {
 }
 
 #reveal-btn:hover {
-  background-color: #aeeaae;
+  background-color: #cbe2f7;
 }
 
 #current-book {
@@ -265,7 +265,7 @@ h2, h3 {
 
 .city-box {
   width: 220px;
-  background-color: #eafaf1;
+  background-color: #dceefcd9;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #d2e8df;
@@ -279,6 +279,7 @@ h2, h3 {
 .city-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #cbe2f7;
 }
 
 
@@ -337,6 +338,24 @@ h2, h3 {
   left: 0;
   font-size: 1.2em;
   line-height: 1;
+}
+
+.section-box {
+  border: 2px solid #dceefcd9;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  margin-bottom: 2rem;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.section-box:hover {
+  background-color: #cbe2f7;
+  transform: translateY(-4px);
 }
 
 /* Footer */

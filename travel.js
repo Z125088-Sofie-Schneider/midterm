@@ -36,6 +36,9 @@ L.marker([45.4647, 9.1885]).addTo(map)
 L.marker([48.8647, 2.3490]).addTo(map)
   .bindPopup('Paris, France');
 
+L.marker([48.5734, 7.7521]).addTo(map)
+  .bindPopup('Strasbourg, France');
+
 L.marker([47.8112, 13.0332]).addTo(map)
   .bindPopup('Salzburg, Austria');
 
