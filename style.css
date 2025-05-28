@@ -6,16 +6,22 @@
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5; /* Hellgrau */
   color: #2c3e50; /* Dunkelgraublau */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 p {
@@ -23,7 +29,7 @@ p {
 }
 
 /* Layout Containers */
-header, main, footer {
+header, main {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -35,6 +41,8 @@ main {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  flex: 0;
+  margin: auto;
 }
 
 /* Navigation */
@@ -92,12 +100,16 @@ nav a.active {
   text-align: center;
   padding: 2rem;
   margin: 0;
+  flex-shrink: 0;
 }
+
+
 
 .hero-content {
   background: rgba(220, 238, 252, 0.5); /* Pastellblau */
   padding: 2rem;
   border-radius: 2rem;
+  text-align: center;
 }
 
 .hero-name {
@@ -159,8 +171,18 @@ h2, h3 {
 }
 
 #current-book {
-  transition: opacity 0.5s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease, padding 0.3s ease;
+  padding: 0;
+  text-align: center;
+}
+
+#current-book.show {
   opacity: 1;
+  max-height: 100px; 
+  padding: 10px;
 }
 
 .fade-out {
@@ -362,12 +384,20 @@ h2, h3 {
 }
 
 /* Footer */
-footer {
+
+.site-footer {
+  background-color: rgba(128, 128, 128, 0.6); 
+  color: #fff;                                
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 40px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+  position: relative; 
+  z-index: 10;       
+  flex-shrink: 0;  
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 991px) {
@@ -390,20 +420,6 @@ footer {
     padding: 4px 6px;
   }
 
-  .hero {
-    height: calc(var(--vh, 1vh) * 100) !important;
-    width: 100vw;
-    background-color: #f5f5f5;
-    background-image: url(images/background.jpg);
-    padding: 0 !important;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-  }
 
   .hero-content {
     padding: 1rem;

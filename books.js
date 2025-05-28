@@ -6,17 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // When the "Reveal" button is clicked
   button.addEventListener("click", function () {
     // Show the book text and hide the button
-    book.classList.remove("hidden", "fade-out");
-    button.classList.add("hidden");
+    book.classList.add("show");    
+    book.classList.remove("hidden"); 
 
     // After 5 seconds, fade out the book
     setTimeout(() => {
-      book.classList.add("fade-out");
+      book.classList.remove("show");
 
       // After fade-out (0.5s), hide the book and show the button again
       setTimeout(() => {
         book.classList.add("hidden");
-        book.classList.remove("fade-out");
         button.classList.remove("hidden");
       }, 500);
     }, 5000);
