@@ -399,11 +399,14 @@ h2, h3 {
 
 
 /* Responsive Design */
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
   .genre-box {
     width: 45%;
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 }
+
 
 @media (max-width: 600px) {
   nav {

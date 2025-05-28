@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".book").forEach(bookItem => {
     bookItem.addEventListener("click", function (event) {
       // Only apply this on small screens (mobile)
-      if (window.innerWidth <= 991) {
+      if (window.innerWidth <= 1100) {
         event.stopPropagation();
         // Toggle visibility of this book's info
         this.classList.toggle("show-info");
